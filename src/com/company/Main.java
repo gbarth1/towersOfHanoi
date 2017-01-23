@@ -7,7 +7,11 @@ public class Main {
         System.out.println("Tower of Hanoi Game Instructions :)");
         System.out.println("This program will solve this puzzle for you.");
         System.out.println("Please input the number of disks to solve for:");
-        System.out.println("Instructions:");
+        Scanner ans = new Scanner(System.in);
+        int diskNum = ans.nextInt();
+
+        TowersOfHanoi instructions=new TowersOfHanoi(diskNum);
+        System.out.println(instructions.solve());
 
 
 
